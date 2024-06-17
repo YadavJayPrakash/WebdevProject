@@ -1,0 +1,72 @@
+/* Reset margin and padding, set box-sizing, and define global font settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ff6525;
+    background-color: #ecf0ecf3;
+}
+
+/* Center the container vertically and horizontally */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the calculator */
+.calculator {
+    border: 2px solid #ecf0ecf3;
+    /* Corrected border syntax */
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #fff,
+        5px 5px 12px rgba(0, 0, 0, 0.14);
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+}
+
+input {
+    grid-column: span 4;
+    height: 80px;
+    width: 280px;
+    background-color: #ecf0ecf3;
+    border: none;
+    box-shadow: inset -5px -5px 12px #fff,
+        inset 5px 5px 12px rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    outline: none;
+    font-size: 50px;
+    text-align: end;
+    margin: 40px auto;
+    padding: 10px;
+}
+input::placeholder{
+    color: #ff6525;
+}
+button{
+    width: 50px;
+    height: 50px;
+    background-color: #ecf0ecf3; 
+    box-shadow: inset -5px -5px 12px #fff,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.14);
+
+    border-radius: 50%;
+    border: none;
+    margin: 8px auto;
+}
+.equal{
+    width: 115px;
+    border-radius: 47px;
+    margin: 8px 12px ;
+}
+p{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    
+   }
